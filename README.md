@@ -10,13 +10,13 @@ Ou seja, ela transforma um sinal no tempo (como um som ou variação de tensão)
 Sua forma é tal que, dada uma sequência de entrada \( x[0], x[1], ... , x[N-1] \), podemos calcular cada valor \( X[k] \) da DFT pela seguinte fórmula:
 
 ```math
-W[k, n] = \sum_{n=0}^{N-1} x[n] \cdot e^{-j \cdot 2\pi \cdot kn / N}
+X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-j \cdot 2\pi \cdot kn / N}
 ```
 
 Assim, usando o método matricial, vamos calcular a DFT através da multiplicação de matrizes. Para isso, organizamos uma matriz 𝑊 W de tamanho 𝑁×𝑁, onde cada elemento é definido como:
 
 ```math
-X[k] = e^{-j \cdot 2\pi \cdot kn / N}
+W[k, n] = e^{-j \cdot 2\pi \cdot kn / N}
 ```
 
 Com isso, podemos calcular todos os valores da DFT de uma só vez, realizando a multiplicação da matriz 𝑊 W pelo vetor de entrada 𝑥
