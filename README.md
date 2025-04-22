@@ -31,7 +31,7 @@ Essa matriz foi então multiplicada pelo vetor de entrada \( x \), resultando no
 
 𝑋 = 𝑊 ⋅ 𝑥
 
-O vetor resultante 𝑋 contém todas as 𝑁 frequências discretas da transformada. Esse método é chamado de DFT pelo método matricial.
+O vetor resultante 𝑋 contém todas as 𝑁 frequências discretas da transformada. 
 
 Além da implementação da transformada, também foi realizado um estudo de desempenho. A função foi executada para diferentes tamanhos de entrada \( N \), variando de 2 a 1024, e foi medido o tempo de execução para cada caso. Os resultados foram armazenados e exibidos em um gráfico que mostra o crescimento do tempo em função de \( N \), evidenciando a complexidade computacional da DFT, que é da ordem de N ao quadrado.
 
